@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.box{
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 7px 10px 5px #888888;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.boxinput{
+    width: 700px;
+    height: 150x;
+    background-color: white;
+    box-shadow: 7px 10px 5px #888888;
+    margin-top: 3%;
+}
+
+.timer{
+    font-size: 4cm;
+}
+
+.btplay{
+    margin-right: 450px;
+    margin-top: 10px;
+}
+
+.btpause{
+    margin-top: -130px;
+    position: center;
+}
+
+.btrestart{
+    margin-left: 450px;
+    margin-top: -160px;
+}

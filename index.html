@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cronômetro Regressivo</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body style="background-color: #CAE1FF;">
+
+    <div  align="center">
+        <div class="box" align="center">
+            <h1>Cronômetro Regressivo</h1>
+            <p>Informe o tempo antes de começar.</p>
+            <div class="timer" id="timer">00:00:00</div>
+
+            <div class="row center" >
+                <div class="btplay">
+                    <img src="imagens/ic_play.png" onclick="contagem()">
+                </div>
+                <div class="btpause">
+                    <img src="imagens/ic_pause.png" onclick="pausaContagem()">
+                </div>
+                <div class="btrestart">
+                    <img src="imagens/ic_reset.png" width="180" onclick="reiniciaContagem()">
+                </div>
+            </div>
+
+            <div class="boxinput">
+                <br>
+                <form id="formulario">
+                     Hr:
+                     <input type="number" id="hora" min="0" max="23" value="0"/>
+                     Min:
+                     <input type="number" id="minuto" min="0" max="59" value="0"/>
+                     Seg:
+                     <input type="number" id="segundo" min="0" max="59" value="0"/><br><br>
+                     <input type="submit" value="Enviar">
+                </form>
+                <br>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="javascript/script.js"></script>
+</html>

@@ -12,6 +12,7 @@ var segOriginal;
 //#6495ED
 form.addEventListener('submit', function(e) {
     document.getElementById("timer").style.color="black";
+    document.title = "Cronômetro Regressivo";
 
     var campoHr = document.getElementById('hora');
     var campoMin = document.getElementById('minuto');
@@ -21,7 +22,7 @@ form.addEventListener('submit', function(e) {
     min = campoMin.value;
     seg = campoSeg.value;
 
-    console.log("hr "+ hr + " min "+ min + " seg " + seg);
+    //console.log("hr "+ hr + " min "+ min + " seg " + seg);
 
     hrOriginal = hr;
     minOriginal = min;
@@ -45,6 +46,7 @@ function mostrarTempo(hora, minuto, segundo){
         segundo = '0' + segundo;
     }
     document.getElementById("timer").innerHTML = ""+hora+":"+minuto+":"+segundo+"";
+    document.title = ""+hora+":"+minuto+":"+segundo+"";
 }
 
 function contagem(){
@@ -52,6 +54,8 @@ function contagem(){
         clearTimeout(timerID);
         mostrarTempo(0, 0, 0);
         document.getElementById("timer").style.color="red";
+        document.title = "FIM";
+
     }else {
 
         seg--;
